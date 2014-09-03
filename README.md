@@ -35,8 +35,20 @@ git clone https://github.com/wiliamsouza/messenger.git ~/devel/messenger
 pip install requirements_development.txt
 ```
 
+Dependencies
+------------
+
+```
+apt-get install spatialite-bin binutils libproj-dev gdal-bin
+```
+
 Setup
 -----
+
+```
+cd messenger
+spatialite development.db "SELECT InitSpatialMetaData();"
+```
 
 Zones and prices
 -----------------
